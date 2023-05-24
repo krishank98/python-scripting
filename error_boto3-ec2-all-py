@@ -1,0 +1,13 @@
+c2-all.py
+Traceback (most recent call last):
+  File "/home/krish/python-scripting/python-scripting/boto3-ec2-all.py", line 38, in <module>
+    main()
+  File "/home/krish/python-scripting/python-scripting/boto3-ec2-all.py", line 34, in main
+    create_key_pair()
+  File "/home/krish/python-scripting/python-scripting/boto3-ec2-all.py", line 6, in create_key_pair
+    key_pair = ec2_client.create_key_pair(KeyName="ec2-key-pair")
+  File "/usr/local/lib/python3.10/dist-packages/botocore/client.py", line 530, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/botocore/client.py", line 964, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (InvalidKeyPair.Duplicate) when calling the CreateKeyPair operation: The keypair already exists
